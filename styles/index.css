@@ -21,6 +21,28 @@ h2{
     color: rgb(163, 0, 0);
 }
 
+dialog{
+    padding: auto;
+    margin: auto;
+}
+
+/*Todo del pop up*/
+
+.dialog-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.close-dialog{
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+
+
 .info-menu{
     display: grid;
     place-items: center;

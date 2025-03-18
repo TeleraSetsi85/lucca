@@ -34,39 +34,45 @@
         </div>
 
         <div>
-            <h2>Mejores platillos</h2>
+            <h2 class="text-center">Mejores platillos</h2>
         </div>
         <div class="container text-center mt-4">
-            <div class="row align-items-center">
-                <div class="card col m-2">
-                    <div class="info-menu">
-                        <img class="img-fluid" src="/img/pizza.png" alt="pizza">
-                        <p class="italiana-regular">MONTARANA</p>
-                        <p>Mozzarella fresca,mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
-                        <p class="italiana-regular">179$</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card m-2">
+                        <div class="info-menu">
+                            <img class="img-fluid" src="/img/pizza.png" alt="pizza">
+                            <p class="italiana-regular">MONTARANA</p>
+                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
+                            <p class="italiana-regular">179$</p>
+                        </div>
                     </div>
                 </div>
         
-                <div class="card col m-2">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card m-2">
                         <div class="info-menu">
                             <img class="img-fluid" src="/img/drinksImg.png" alt="pizza">
                             <p class="italiana-regular">MONTARANA</p>
-                            <p>Mozzarella fresca,mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
+                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
                             <p class="italiana-regular">179$</p>
                         </div>
-                </div>
-
-
-                <div class="card col m-2">
-                    <div class="info-menu">
-                        <img class="img-fluid" src="/img/pasta.png" alt="pizza">
-                        <p class="italiana-regular">MONTARANA</p>
-                        <p>Mozzarella fresca,mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
-                        <p class="italiana-regular">179$</p>
                     </div>
-            </div>
+                </div>
+        
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card m-2">
+                        <div class="info-menu">
+                            <img class="img-fluid" src="/img/pasta.png" alt="pizza">
+                            <p class="italiana-regular">MONTARANA</p>
+                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
+                            <p class="italiana-regular">179$</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </header>
 
     <main>
@@ -118,7 +124,7 @@
 
             <h2>SECONDI</h2>
             <div class="container">
-                <p>
+                <p id="meal">
                     SALMONE AL LIMONE .................................. $319<br>
                     Salmón perfumado al limón y eneldo con puré de papa y espárragos.<br>
 
@@ -173,24 +179,7 @@
                     Café espresso / Licor 43</p><br>
             </div>
         </div>
-        <!--Pop up meals-->
-        <dialog>
-            <div class="headerPop">
-                <h3>CARPACCIO DE MANZO</h3>
-            </div>
-            <div>
-                <p><strong>Tamaño</strong></p>
-                <p>Mediano</p>
-
-                <p><strong>Tiempo de estimacion</strong></p>
-                <p>20 min</p>
-
-                <p><strong>Calorias</strong></p>
-                <p>200kcal</p>
-
-                <img src="" alt="">
-            </div>
-        </dialog>
+        <div id="show-meal"></div>
     </main>
 
     <script src="/scripts/btn.js"></script>
