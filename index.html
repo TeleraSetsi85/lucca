@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--BS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,22 +14,19 @@
     <link rel="stylesheet" href="/styles/index.css">
     <title>Lucca</title>
 </head>
+
 <body>
     <header>
-        <div>
-            <img class="img-fluid" id="lucLogo" src="/img/logoLucca.jpg" alt="logoLucca">
-            <h1>ME</h1>
-            <h1>NU</h1>
-        </div>
+        <h1 style="text-align: center;">MENU</h1>
 
         <div class="container text-center mt-4">
             <div class="row align-items-center">
                 <div class="col">
-                    <img id="lucBeb" class="img-fluid" src="/img/drinks2.png" alt="drinks">
+                    <img id="lucBeb" class="img-fluid" style="width: 50%;" src="/img/drinks2.png" alt="drinks">
                     <h3>Bebidas</h3>
                 </div>
                 <div class="col">
-                    <img id="lucPla" class="img-fluid" src="/img/meals.png" alt="Meals">
+                    <img id="lucPla" class="img-fluid" style="width: 50%;" src="/img/meals.png" alt="Meals">
                     <h3>Platillos</h3>
                 </div>
             </div>
@@ -38,92 +37,100 @@
         </div>
         <div class="container text-center mt-4">
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3" onclick="mealInfo(0)">
                     <div class="card m-2">
                         <div class="info-menu">
                             <img class="img-fluid" src="/img/pizza.png" alt="pizza">
                             <p class="italiana-regular">MONTARANA</p>
-                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
+                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y
+                                aceite con trufa</p>
                             <p class="italiana-regular">179$</p>
                         </div>
                     </div>
                 </div>
-        
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3" onclick="mealInfo(1)">
                     <div class="card m-2">
                         <div class="info-menu">
                             <img class="img-fluid" src="/img/drinksImg.png" alt="pizza">
                             <p class="italiana-regular">MONTARANA</p>
-                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
+                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y
+                                aceite con trufa</p>
                             <p class="italiana-regular">179$</p>
                         </div>
                     </div>
                 </div>
-        
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3" onclick="mealInfo(2)">
                     <div class="card m-2">
                         <div class="info-menu">
-                            <img class="img-fluid" src="/img/pasta.png" alt="pizza">
+                            <img class="img-fluid" style="height: 168px; object-fit:contain;" src="/img/pasta.png"
+                                alt="pizza">
                             <p class="italiana-regular">MONTARANA</p>
-                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y aceite con trufa</p>
+                            <p>Mozzarella fresca, mascarpone, champiñones, salsa de nueces, jitomate deshidratados y
+                                aceite con trufa</p>
                             <p class="italiana-regular">179$</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </header>
 
-    <main>
-
-        <div>
-            <h2>ANTIPASTI</h2>
+    <main style="display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 8rem; margin-top: 2rem; margin-bottom: 2rem;">
+        <div id="food" style="display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 2rem;">
             <div class="container">
+                <h2>ANTIPASTI</h2>
                 <p>CARPACCIO DE MANZO ................................... $229<br>
-                    Finas láminas de filete de res, alcaparras, láminas de parmesano, arúgula y vinagreta de limón, servido con focaccia.<br>
-                    
+                    Finas láminas de filete de res, alcaparras, láminas de parmesano, arúgula y vinagreta de limón,
+                    servido con focaccia.<br>
+
                     BURRATA ............................................................... $229<br>
-                    Queso italiano de consistencia suave con jitomate cherry, cama de arúgula, aceite de oliva extra virgen, y pistache, servido con focaccia.<br>
-                    
+                    Queso italiano de consistencia suave con jitomate cherry, cama de arúgula, aceite de oliva extra
+                    virgen, y pistache, servido con focaccia.<br>
+
                     CALAMARI FRITTI .............................................. $189<br>
                     Calamares fritos acompañados de salsa marinara y aderezo de chipotle.<br>
-                    
+
                     PARMIGIANA ...................................................... $219<br>
                     Láminas de berenjena con salsa pomodoro, parmesano y albahaca.<br>
-                    
+
                     ARANCINI ............................................................. $169<br>
-                    Clásicos sicilianos, croquetas de arroz rellenas de boloñesa y mozzarella, empanizado, servido con salsa pomodoro y parmesano.</p>
+                    Clásicos sicilianos, croquetas de arroz rellenas de boloñesa y mozzarella, empanizado, servido con
+                    salsa pomodoro y parmesano.</p>
             </div>
-            <h2>INSALATE</h2>
             <div class="container">
+                <h2>INSALATE</h2>
                 <p>INSALATA DI TONNO ........................................ $249<br>
-                    Lechugas mixtas con supremas de toronja y jitomate cherry, láminas de aguacate con atún sellado con pistaches y emulsión de limón y alcaparras.<br>
-                    
+                    Lechugas mixtas con supremas de toronja y jitomate cherry, láminas de aguacate con atún sellado con
+                    pistaches y emulsión de limón y alcaparras.<br>
+
                     CAPRESE ............................................................. $219<br>
                     Queso mozzarella, jitomate saladet y albahaca servida con focaccia.<br>
-                    
+
                     INSALATA "CAESAR" CON POLLO .................. $249<br>
                     Lechuga romana con pollo a la parrilla, clásico aderezo caesar, servido en pan de la casa.</p>
             </div>
-
-            <h2>PASTE</h2>
             <div class="container">
+                <h2>PASTE</h2>
                 <p>FETTUCCINE ALFREDO ................................... $179<br>
                     Salsa cremosa con parmesano y pasta fresca hecha en casa.<br>
-                    
+
                     LASAGNA ............................................................... $179<br>
                     Clásico de pasta hecha en casa con boloñesa, salsa bechamel y parmesano.<br>
-                    
+
                     RIGATONI AMATRICIANA ............................. $179<br>
                     Rigatoni con salsa de pomodoro, Guanciale y queso Pecorino.<br>
-                    
-                    FETTUCCINE LUCCA ..................................... $199<br>
-                    Salsa cremosa de la casa con mascarpone, hongos porcini, trufa y parmesano, servido con jamón serrano.</p>
-            </div>
 
-            <h2>SECONDI</h2>
+                    FETTUCCINE LUCCA ..................................... $199<br>
+                    Salsa cremosa de la casa con mascarpone, hongos porcini, trufa y parmesano, servido con jamón
+                    serrano.</p>
+            </div>
             <div class="container">
+                <h2>SECONDI</h2>
                 <p id="meal">
                     SALMONE AL LIMONE .................................. $319<br>
                     Salmón perfumado al limón y eneldo con puré de papa y espárragos.<br>
@@ -132,16 +139,18 @@
                     Filete miñón con salsa a la pimienta verde.<br>
 
                     RIB EYE .................................................................. $450<br>
-                    Rib eye salteado con mantequilla y romero, servido con puré de papa, espárragos y salsa de champiñones.<br>
+                    Rib eye salteado con mantequilla y romero, servido con puré de papa, espárragos y salsa de
+                    champiñones.<br>
 
                     POLLO ALLA MILANESE ............................... $319<br>
                     Pechuga de pollo empanizada, con salsa pomodoro y parmesano, papas al horno y ensalada mixta.
                 </p>
             </div>
         </div>
-        <div id="drinks">
-            <h2>Bebidas Preparadas</h2>
+        <div id="drinks" style="display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 2rem;">
             <div class="container">
+                <h2>Bebidas Preparadas</h2>
                 <p>
                     Naranjada ............................................................. $46<br>
                     Limonada .............................................................. $46<br>
@@ -150,39 +159,40 @@
                     Refrescos .............................................................. $44<br>
                     Agua del día ......................................................... $46</p>
             </div>
-        </div>
-        <div>
-            <h2>Cocteleria de la casa</h2>
             <div class="container">
+                <h2>Cocteleria de la casa</h2>
                 <p>MOJITO CLÁSICO ........................................... $109<br>
                     Ron / Limón / Hierbabuena / Sprite<br>
-                    
+
                     MOJITO FRUTAL ............................................ $114<br>
                     Ron o Mezcal / Limón / Frutos rojos frescos / Hierbabuena / Sprite<br>
-                    
+
                     CLERICOT ...................................................... $109<br>
                     Cítricos / Vino tinto o blanco / Sprite<br>
-                    
+
                     TONIC CÍTRICO ............................................. $119<br>
                     Ginebra / Rodajas de cítricos / Licor de naranja / Agua quina<br>
-                    
+
                     TONIC FRUTOS ROJOS .................................. $129<br>
                     Ginebra / Fresa / Berries / Frambuesa / Agua quina<br>
-                    
+
                     MEZCALILLO ................................................. $129<br>
-                    Mezcal de la casa / Jugo de cítricos naturales / Licor de naranja / Splash de refresco de toronja / Rodajas de cítricos / Sal de chiles<br>
-                    
+                    Mezcal de la casa / Jugo de cítricos naturales / Licor de naranja / Splash de refresco de toronja /
+                    Rodajas de cítricos / Sal de chiles<br>
+
                     NEGRONI ....................................................... $129<br>
                     Ginebra / Campari / Vermut rojo / Corteza de naranja<br>
-                    
+
                     CARAJILLO .................................................... $149<br>
                     Café espresso / Licor 43</p><br>
             </div>
         </div>
-        <div id="show-meal"></div>
     </main>
 
     <script src="/scripts/btn.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

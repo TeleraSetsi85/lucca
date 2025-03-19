@@ -1,111 +1,154 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #F5F5DC;
+body {
+  background-color: #f5f5dc;
 }
 
-header{
-    padding: 10px 15px;
+header {
+  padding: 10px 15px;
 }
-h1{
-    font-size: 15rem;
-    color: #252e14;
-}
-
-h2{
-    text-align: center;
-    color: rgb(163, 0, 0);
+h1 {
+  font-size: 15rem;
+  color: #252e14;
 }
 
-dialog{
-    padding: auto;
-    margin: auto;
+h2 {
+  text-align: center;
+  color: rgb(163, 0, 0);
 }
 
-/*Todo del pop up*/
-
-.dialog-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 15px;
+.info-menu {
+  display: grid;
+  place-items: center;
 }
 
-.close-dialog{
-    padding: 10px;
-    border: none;
-    background-color: white;
-    color: black;
+.card {
+  background-color: rgba(254, 254, 254, 0.34);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-
-
-.info-menu{
-    display: grid;
-    place-items: center;
+.card:hover {
+  transform: scale(1.1);
 }
 
-.card{
-    background-color: rgba(254, 254, 254, 0.34);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: 0.2s;
-    cursor: pointer;
+.card:active {
+  transform: scale(1);
 }
 
-.card:hover{
-    transform: scale(1.1);
+#lucLogo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  border-radius: 50px;
+  width: 15rem;
 }
 
-.card:active{
-    transform: scale(1);
+#lucBeb {
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-#lucLogo{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px 15px;
-    border-radius: 50px;
-    width: 15rem; 
+#lucBeb:hover {
+  transform: scale(1.1);
 }
 
-#lucBeb{
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.2s;
+#lucBeb:active {
+  transform: scale(1);
 }
 
-#lucBeb:hover{
-    transform: scale(1.1);
+#lucPla {
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-#lucBeb:active{
-    transform: scale(1);
+#lucPla:hover {
+  transform: scale(1.1);
 }
 
-#lucPla{
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#lucPla:hover{
-    transform: scale(1.1);
-}
-
-#lucPla:active{
-    transform: scale(1);
+#lucPla:active {
+  transform: scale(1);
 }
 
 .italiana-regular {
-    color: rgb(163, 0, 0);
-    font-family: "Italiana", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  color: rgb(163, 0, 0);
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+dialog {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  max-width: 500px;
+  width: 90%;
+  background: #fff;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+/* Fondo oscuro semitransparente al abrir el diálogo */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Centrado del diálogo en la pantalla */
+dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Encabezado del diálogo */
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a30000;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dialog-header h3 {
+  margin: 0;
+}
+
+/* Botón de cierre */
+.close-dialog {
+  height: 50px;
+  border: none;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: transparent;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-dialog:hover {
+  color: #ffbfbf;
+}
+
+.close-dialog:focus {
+  outline: none;
 }
